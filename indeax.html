@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+        <title>Design Website</title>
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- header -->
+            <header>
+                <a href="#" class="logo">Danielle Onwuka</a>
+                <div class="toggle" onclick="toggleClassName()"></div>
+            </header>
+            <!-- aidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#home" onclick="toggleClassName()">Home</a></li>
+                    <li><a href="#about" onclick="toggleClassName()">About</a></li>
+                    <li><a href="#services" onclick="toggleClassName()">Projects</a></li>
+                    <li><a href="#team" onclick="toggleClassName()">Other</a></li>
+                    <li><a href="#contact" onclick="toggleClassName()">Contact</a></li>
+                </ul>
+            </div>
+            <!-- banner -->
+            <div class="banner" id="home">
+                <img src="images/landing.png">
+                <div class="content">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+            <!-- About Us -->
+            <section class="about" id="about">
+                <div class="contentBx">
+                    <h2 class="heading">About Me</h2>
+                    <p class="text">Hello! My name is Danielle Onwuka and I enjoy creating things that live on the internet.
+                        My interest in web design started back when I was in high school and coded my first HTML page. 
+                        I took a bit of a detour in college and graduated with two degrees in Art and Graphic Design. Due to this 
+                        I remembered what I loved about web design and computers. 
+                        <br>
+                        Fast-forward to today where I've rediscovered my love of coding. My main focus is to learn as much as I 
+                        can build accessible, inclusive products and digital experiences. 
+                    </p>
+                </div>
+                <div class="imgBx"></div>
+            </section>
+        
+        <!-- Services -->
+        <section class="services" id="services">
+                <h2 class="heading">My Projects</h2>
+                <p class="text">These are some projects I've worked on over the years that demonstrate my knowledge
+                    and experience in a variety of programming languages and coding tools. </p>
+                    <div class="container">
+                        <div class="serviceBx">
+                            <div>
+                                <li><a href="https://danielleonwuka.github.io/SteampunkGame/" target="_blank"><img src="images/gaming.png">
+                                <h2>Shooter Game</h2></a></li>
+                            </div>
+                        </div>
+
+                        <div class="serviceBx">
+                            <div>
+                                <li><a href="https://danielleonwuka.github.io/Movin/" target="_blank"><img src="images/dancing.png">
+                                <h2>Movin Bodies</h2></a></li>
+                            </div>
+                        </div>
+
+                        <div class="serviceBx">
+                            <div>
+                                <li><a href="http://danielleonwuka.com/index.php/bvaam/" target="_blank"><img src="images/museum.png">
+                                <h2>BVAAM</h2></a></li>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+       
+        <!-- technologies -->
+        <section class="technologies">
+            <div class="contentBx">
+                <h2 class="heading">Technology</h2>
+                <p class="text">Here are some of the technologies I've been working with: <br>
+                    JavaScript | CSS | React | VS Code <br>
+                    HTML | Wordpress | Sublime Text | Figma 
+                    </p>
+            </div>
+            <div class="imgBx">
+                <img src="images/tech2.png">
+            </div>
+        </section>
+             <!-- clients -->
+        
+            
+            <!-- team -->
+            <section class="team" id="team">
+                <h2 class="heading">Other Design Works</h2>
+                <p class="text">To see more of my graphic design works check out my design site at danielleonwuka.com</p>
+                    <div class="container">
+                        <div class="teamBox">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/poster.png">
+                                </div>
+                                <div class="content">
+                                    <h2>Diversity Poster</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamBox">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/motherland.jpg">
+                                </div>
+                                <div class="content">
+                                    <h2>Motherland Tea</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamBox">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/fame.png">
+                                </div>
+                                <div class="content">
+                                    <h2>How To Deal With FAMe</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamBox">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/lovers.png">
+                                </div>
+                                <div class="content">
+                                    <h2>Lovers</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- contact -->
+            <section class="contact" id="contact">
+                <div>
+                    <h2 class="heading">Contact Me</h2>
+                    <p class="text">Interested in getting to know me better? Here's how to reach me.</p>
+                    <br> <br>
+                    <h4>Email: danielleonwuka@gmail.com <br>
+                        Phone: 713.397.5123</h4>
+                </div>
+            </section>
+            <section class="about">
+                
+            </section>
+
+             <!-- footer -->
+             <section class="footer">
+                <p class="text"> Design & Developed By Danielle Onwuka</p>
+                <ul>
+                    <p class="text">Follow us on : </p>
+                    <li><a href="#"><img src="images/facebook.png"></a></li>
+                    <li><a href="#"><img src="images/instagram.png"></a></li>
+                    <li><a href="#"><img src="images/twitter2.png"></a></li>
+                </ul>
+             </section>
+    </div>
+
+        <script type="text/javascript">
+            function toggleClassName(){
+                var sidebar = document.querySelector('.sidebar');
+                var wrapper = document.querySelector('.wrapper');
+                var toggle = document.querySelector('.toggle');
+                sidebar.classList.toggle('active')
+                wrapper.classList.toggle('active')
+                toggle.classList.toggle('active')
+            }
+
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0)
+            })
+        </script>
+    </body>
+</html>

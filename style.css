@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #12222d;
+    height: 1000px;
+}
+.wrapper{
+    position: relative;
+    transition: 0.5s;
+    left: 0;
+}
+.wrapper.active{
+    left: -400px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.5s;
+}
+header.sticky{
+    padding: 20px 100px;
+    background: #162c3b;
+}
+header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header .toggle{
+    position: relative;
+    width: 36px;
+    height: 28px;
+    background: url(images/toggle.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+header .toggle.active{
+    background: url(images/close.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3475ca;
+
+}
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+.banner .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 60px;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 18px;
+    color: #fff;
+}
+.sidebar{
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: #12222d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: 0.5s;
+}
+.sidebar.active{
+    right: 0;
+}
+.sidebar ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+.sidebar ul li a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.sidebar ul li a:hover{
+    color: #3475ca;
+}  
+.about{
+    position: relative;
+    width: 100%;
+    background: #162c3b;
+    display: flex;
+}
+.about .contentBx{
+    background: #162c3b;
+    padding: 100px;
+    width: 50%;
+}
+.heading{
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.text{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.about .imgBx{
+    position: relative;
+    width: 50%;
+    background: url(images/headshot2.png);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.services{
+    position: relative;
+    background: #12222d;
+    text-align: center;
+    padding: 50px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.container .serviceBx{
+    position: relative;
+    background: #fff;
+    width: 395px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.technologies{
+    position: relative;
+    background: #3475ca;
+    width: 100%;
+    padding: 200px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.technologies .contentBx{
+    position: relative;
+    max-width: 800px;
+
+}
+.technologies .imgBx{
+    position: relative;
+    max-width: 400px;
+    left: -300px;
+    background-size: 70%;
+}
+.team{
+    position: relative;
+    padding: 0px 100px 100px;
+    text-align: center;
+}
+.team .container{
+    margin-top: 30px;
+}
+.team .teamBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+.team .teamBox .box{
+    margin: 0;
+    width: 260px;
+    padding: 5px;
+    background-color: #fff;
+}
+.team .container .teamBox .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.team .container .teamBox .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+.team .teamBox .box .content{
+    padding: 15px 0;
+}
+.team .teamBox .box .content h2{
+    position: relative;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+.team .teamBox .box .content h2 span{
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact{
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background: #162c3b;
+    color: #fff;
+}
+
+.footer{
+    position: relative;
+    background: #3475ca;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+
+}
+.footer ul li a img{
+    max-width: 20px;
+    /* filter: invert(1); turns black to white*/
+}
